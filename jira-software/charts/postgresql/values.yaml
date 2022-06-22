@@ -7,7 +7,7 @@ global:
 #   imageRegistry: myRegistryName
 #   imagePullSecrets:
 #     - myRegistryKeySecretName
-#   storageClass: myStorageClass
+   storageClass: standard 
 
 ## Bitnami PostgreSQL image version
 ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
@@ -106,7 +106,7 @@ rbac:
   create: false
 
 replication:
-  enabled: false
+  enabled: true
   user: repl_user
   password: repl_password
   slaveReplicas: 1

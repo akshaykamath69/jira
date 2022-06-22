@@ -83,7 +83,7 @@ service:
 ## ref: http://kubernetes.io/docs/user-guide/ingress/
 ingress:
   ## Set to true to enable ingress record generation
-  enabled: false
+  enabled: true
   annotations: {}
   ingressClassName: ''
   # kubernetes.io/ingress.class: nginx
@@ -143,7 +143,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  storageClass:
+  storageClass: standard
 
 # Additional volume mounts
 extraVolumeMounts: []
